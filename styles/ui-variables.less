@@ -6,7 +6,7 @@
 @text-color-selected: @text-color-highlight;
 
 @text-color-info: #5293d8;
-@text-color-success: #26c26a;
+@text-color-success: #2BDA77;
 @text-color-warning: #ff982d;
 @text-color-error: #c00;
 
@@ -57,8 +57,11 @@
 @tab-background-color-active: #222;
 @tab-border-color: #484848;
 
-@tree-view-background-color: @tool-panel-background-color;
+@tree-view-background-color: #303030;
 @tree-view-border-color: @tool-panel-border-color;
+
+@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-color: rgba(92, 92, 92, 0.5);
 
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
@@ -69,7 +72,8 @@
 
 // Sizes
 
-@font-size: 13px;
+@font-size: 11px;
+@input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
 
@@ -79,9 +83,9 @@
 @component-line-height: 25px;
 @component-border-radius: 2px;
 
-@tab-height: 30px;
+@tab-height: 26px;
 
 
 // Other
 
-@font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
+@font-family: system-ui;

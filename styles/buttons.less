@@ -1,11 +1,11 @@
-@import "ui-variables";
-@import "ui-mixins";
-
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   background-color: transparent;
   background-image: -webkit-linear-gradient(@color, darken(@color, 5%));
 
+  &:focus {
+    color: @text-color;
+  }
   &:hover {
     color: @text-color-highlight;
     background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 5%));
